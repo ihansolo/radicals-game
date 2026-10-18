@@ -1,0 +1,936 @@
+{
+"明": {
+"rads": [
+"日",
+"月"
+],
+"def": "bright, clear; to explain, to understand",
+"pinyin": "míng",
+"radical": "日",
+"decomp": "⿰日月"
+},
+"朋": {
+"rads": [
+"月"
+],
+"def": "friend, pal, acquaintance",
+"pinyin": "péng",
+"radical": "月",
+"decomp": "⿰月月"
+},
+"林": {
+"rads": [
+"木"
+],
+"def": "forest, grove; surname",
+"pinyin": "lín",
+"radical": "木",
+"decomp": "⿰木木"
+},
+"森": {
+"rads": [
+"木"
+],
+"def": "forest; luxuriant vegetation",
+"pinyin": "sēn",
+"radical": "木",
+"decomp": "⿱木⿰木木"
+},
+"晶": {
+"rads": [
+"日"
+],
+"def": "crystal; bright, clear, radiant",
+"pinyin": "jīng",
+"radical": "日",
+"decomp": "⿱日⿰日日"
+},
+"男": {
+"rads": [
+"力",
+"田"
+],
+"def": "man, boy; male; baron; surname",
+"pinyin": "nán",
+"radical": "田",
+"decomp": "⿱田力"
+},
+"加": {
+"rads": [
+"力",
+"口"
+],
+"def": "to add to, to increase, to augment",
+"pinyin": "jiā",
+"radical": "力",
+"decomp": "⿰力口"
+},
+"叫": {
+"rads": [
+"口"
+],
+"def": "cry, shout; to call, to greet, to hail",
+"pinyin": "jiào",
+"radical": "口",
+"decomp": "⿰口丩"
+},
+"吃": {
+"rads": [
+"口"
+],
+"def": "to eat; to drink; to suffer, to endure, ",
+"pinyin": "chī",
+"radical": "口",
+"decomp": "⿰口乞"
+},
+"時": {
+"rads": [
+"日"
+],
+"def": "time, season; period, era, age",
+"pinyin": "shí",
+"radical": "日",
+"decomp": "⿰日寺"
+},
+"晚": {
+"rads": [
+"日"
+],
+"def": "night, evening; late",
+"pinyin": "wǎn",
+"radical": "日",
+"decomp": "⿰日免"
+},
+"春": {
+"rads": [
+"日"
+],
+"def": "springtime; joyful, lustful, wanton",
+"pinyin": "chūn",
+"radical": "日",
+"decomp": "⿱？日"
+},
+"是": {
+"rads": [
+"日"
+],
+"def": "to be; indeed, right, yes; okay",
+"pinyin": "shì",
+"radical": "日",
+"decomp": "⿱日疋"
+},
+"星": {
+"rads": [
+"日"
+],
+"def": "star, planet; a point of light",
+"pinyin": "xīng",
+"radical": "日",
+"decomp": "⿱日生"
+},
+"休": {
+"rads": [
+"人",
+"木"
+],
+"def": "to rest; to stop; to retire",
+"pinyin": "xiū",
+"radical": "亻",
+"decomp": "⿰亻木"
+},
+"你": {
+"rads": [
+"人"
+],
+"def": "you, second person pronoun",
+"pinyin": "nǐ",
+"radical": "亻",
+"decomp": "⿰亻尔"
+},
+"他": {
+"rads": [
+"人"
+],
+"def": "other, another; he, she, it",
+"pinyin": "tā",
+"radical": "亻",
+"decomp": "⿰亻也"
+},
+"住": {
+"rads": [
+"人"
+],
+"def": "to reside, to live at, to dwell, to lodg",
+"pinyin": "zhù",
+"radical": "亻",
+"decomp": "⿰亻主"
+},
+"信": {
+"rads": [
+"人",
+"言"
+],
+"def": "to trust, to believe; letter, sign",
+"pinyin": "xìn",
+"radical": "亻",
+"decomp": "⿰亻言"
+},
+"個": {
+"rads": [
+"人"
+],
+"def": "this, that; single; measure word for ind",
+"pinyin": "gè",
+"radical": "亻",
+"decomp": "⿰亻固"
+},
+"們": {
+"rads": [
+"人"
+],
+"def": "plural marker for pronouns and some noun",
+"pinyin": "men",
+"radical": "亻",
+"decomp": "⿰亻門"
+},
+"作": {
+"rads": [
+"人"
+],
+"def": "to make; to write, to compose; to act, t",
+"pinyin": "zuò",
+"radical": "亻",
+"decomp": "⿰亻乍"
+},
+"做": {
+"rads": [
+"人"
+],
+"def": "to work, to make; to act",
+"pinyin": "zuò",
+"radical": "亻",
+"decomp": "⿰亻故"
+},
+"像": {
+"rads": [
+"人"
+],
+"def": "picture, image, figure; to resemble",
+"pinyin": "xiàng",
+"radical": "亻",
+"decomp": "⿰亻象"
+},
+"河": {
+"rads": [
+"水"
+],
+"def": "river, stream; the Yellow river",
+"pinyin": "hé",
+"radical": "氵",
+"decomp": "⿰氵可"
+},
+"海": {
+"rads": [
+"水"
+],
+"def": "sea, ocean; maritime",
+"pinyin": "hǎi",
+"radical": "氵",
+"decomp": "⿰氵每"
+},
+"江": {
+"rads": [
+"水"
+],
+"def": "large river; the Yangtze; surname",
+"pinyin": "jiāng",
+"radical": "氵",
+"decomp": "⿰氵工"
+},
+"湖": {
+"rads": [
+"水"
+],
+"def": "lake; Hubei, Hunan; bluish-green",
+"pinyin": "hú",
+"radical": "氵",
+"decomp": "⿰氵胡"
+},
+"洗": {
+"rads": [
+"水"
+],
+"def": "to bathe, to rinse, to wash",
+"pinyin": "xǐ",
+"radical": "氵",
+"decomp": "⿰氵先"
+},
+"流": {
+"rads": [
+"水"
+],
+"def": "to flow, to drift, to circulate; class",
+"pinyin": "liú",
+"radical": "氵",
+"decomp": "⿰氵㐬"
+},
+"清": {
+"rads": [
+"水"
+],
+"def": "clean, pure; clear, distinct; peaceful",
+"pinyin": "qīng",
+"radical": "氵",
+"decomp": "⿰氵青"
+},
+"深": {
+"rads": [
+"水"
+],
+"def": "deep, profound; depth",
+"pinyin": "shēn",
+"radical": "氵",
+"decomp": "⿰氵罙"
+},
+"滿": {
+"rads": [
+"水"
+],
+"def": "to fill; full, packed; satisfied",
+"pinyin": "mǎn",
+"radical": "氵",
+"decomp": "⿰氵㒼"
+},
+"油": {
+"rads": [
+"水"
+],
+"def": "oil, fat, grease, lard; oil paints",
+"pinyin": "yóu",
+"radical": "氵",
+"decomp": "⿰氵由"
+},
+"活": {
+"rads": [
+"水"
+],
+"def": "to exist, to live, to survive; living, w",
+"pinyin": "huó",
+"radical": "氵",
+"decomp": "⿰氵舌"
+},
+"熱": {
+"rads": [
+"火"
+],
+"def": "heat, fever, zeal",
+"pinyin": "rè",
+"radical": "灬",
+"decomp": "⿱埶灬"
+},
+"照": {
+"rads": [
+"火"
+],
+"def": "to shine, to reflect, to illuminate",
+"pinyin": "zhào",
+"radical": "灬",
+"decomp": "⿱昭灬"
+},
+"烈": {
+"rads": [
+"火"
+],
+"def": "fiery, violent; ardent, vehement",
+"pinyin": "liè",
+"radical": "灬",
+"decomp": "⿱列灬"
+},
+"然": {
+"rads": [
+"火"
+],
+"def": "certainly; naturally; suddenly",
+"pinyin": "rán",
+"radical": "灬",
+"decomp": "⿱肰灬"
+},
+"煮": {
+"rads": [
+"火"
+],
+"def": "to boil, to cook",
+"pinyin": "zhǔ",
+"radical": "灬",
+"decomp": "⿱者灬"
+},
+"想": {
+"rads": [
+"心"
+],
+"def": "to believe, to wish for; to consider, to",
+"pinyin": "xiǎng",
+"radical": "心",
+"decomp": "⿱相心"
+},
+"思": {
+"rads": [
+"心",
+"田"
+],
+"def": "to think, to ponder, to consider; final ",
+"pinyin": "sī",
+"radical": "心",
+"decomp": "⿱田心"
+},
+"怕": {
+"rads": [
+"心"
+],
+"def": "to fear, to be afraid of; apprehensive",
+"pinyin": "pà",
+"radical": "忄",
+"decomp": "⿰忄白"
+},
+"快": {
+"rads": [
+"心"
+],
+"def": "speedy, rapid, quick; soon",
+"pinyin": "kuài",
+"radical": "忄",
+"decomp": "⿰忄夬"
+},
+"慢": {
+"rads": [
+"心"
+],
+"def": "slowly, leisurely; sluggish",
+"pinyin": "màn",
+"radical": "忄",
+"decomp": "⿰忄曼"
+},
+"忙": {
+"rads": [
+"心"
+],
+"def": "busy, hurried, pressed for time",
+"pinyin": "máng",
+"radical": "忄",
+"decomp": "⿰忄亡"
+},
+"情": {
+"rads": [
+"心"
+],
+"def": "emotion, feeling, sentiment",
+"pinyin": "qíng",
+"radical": "忄",
+"decomp": "⿰忄青"
+},
+"愛": {
+"rads": [
+"心"
+],
+"def": "to love, to like, to be fond of; love, a",
+"pinyin": "ài",
+"radical": "心",
+"decomp": "⿱⿱爫⿱冖心夂"
+},
+"感": {
+"rads": [
+"心"
+],
+"def": "to affect, to move, to touch; to perceiv",
+"pinyin": "gǎn",
+"radical": "心",
+"decomp": "⿱咸心"
+},
+"息": {
+"rads": [
+"心"
+],
+"def": "to end, to cease, to put a stop to; paus",
+"pinyin": "xī",
+"radical": "心",
+"decomp": "⿱自心"
+},
+"打": {
+"rads": [
+"手"
+],
+"def": "to attack, to beat, to hit, to strike",
+"pinyin": "dǎ",
+"radical": "扌",
+"decomp": "⿰扌丁"
+},
+"找": {
+"rads": [
+"手"
+],
+"def": "to search for, to look for, to find; cha",
+"pinyin": "zhǎo",
+"radical": "扌",
+"decomp": "⿰扌戈"
+},
+"拿": {
+"rads": [
+"手"
+],
+"def": "to bring, to grasp, to hold, to take",
+"pinyin": "ná",
+"radical": "手",
+"decomp": "⿱合手"
+},
+"推": {
+"rads": [
+"手"
+],
+"def": "to push; to expel; to drive; to decline",
+"pinyin": "tuī",
+"radical": "扌",
+"decomp": "⿰扌隹"
+},
+"拉": {
+"rads": [
+"手"
+],
+"def": "to pull, to drag; to seize, to hold; to ",
+"pinyin": "lā",
+"radical": "扌",
+"decomp": "⿰扌立"
+},
+"提": {
+"rads": [
+"手"
+],
+"def": "to hold in the hand; to lift, to raise",
+"pinyin": "tí",
+"radical": "扌",
+"decomp": "⿰扌是"
+},
+"接": {
+"rads": [
+"手"
+],
+"def": "to connect, to join; to receive, to meet",
+"pinyin": "jiē",
+"radical": "扌",
+"decomp": "⿰扌妾"
+},
+"把": {
+"rads": [
+"手"
+],
+"def": "to grasp, to hold; to guard, to take; ha",
+"pinyin": "bǎ",
+"radical": "扌",
+"decomp": "⿰扌巴"
+},
+"抱": {
+"rads": [
+"手"
+],
+"def": "to embrace, to hold in one's arms; to en",
+"pinyin": "bào",
+"radical": "扌",
+"decomp": "⿰扌包"
+},
+"拍": {
+"rads": [
+"手"
+],
+"def": "to clap, to tap; to hit, to beat, to sla",
+"pinyin": "pāi",
+"radical": "扌",
+"decomp": "⿰扌白"
+},
+"說": {
+"rads": [
+"言"
+],
+"def": "to speak, to say; to scold, to upbraid",
+"pinyin": "shuō",
+"radical": "言",
+"decomp": "⿰言兌"
+},
+"話": {
+"rads": [
+"言"
+],
+"def": "talk, speech; language, dialect",
+"pinyin": "huà",
+"radical": "言",
+"decomp": "⿰言舌"
+},
+"語": {
+"rads": [
+"言"
+],
+"def": "words, language; saying, expression",
+"pinyin": "yǔ",
+"radical": "言",
+"decomp": "⿰言吾"
+},
+"請": {
+"rads": [
+"言"
+],
+"def": "to ask, to request; to invite; please",
+"pinyin": "qǐng",
+"radical": "言",
+"decomp": "⿰言青"
+},
+"謝": {
+"rads": [
+"言"
+],
+"def": "to thank; to refuse politely",
+"pinyin": "xiè",
+"radical": "言",
+"decomp": "⿰言射"
+},
+"讀": {
+"rads": [
+"言"
+],
+"def": "to study, to learn; to read, to pronounc",
+"pinyin": "dú",
+"radical": "言",
+"decomp": "⿰言賣"
+},
+"課": {
+"rads": [
+"言"
+],
+"def": "subject, lesson, course; classwork",
+"pinyin": "kè",
+"radical": "言",
+"decomp": "⿰言果"
+},
+"記": {
+"rads": [
+"言"
+],
+"def": "mark, sign; to note, to record",
+"pinyin": "jì",
+"radical": "言",
+"decomp": "⿰言己"
+},
+"認": {
+"rads": [
+"言"
+],
+"def": "to know, to recognize, to understand",
+"pinyin": "rèn",
+"radical": "言",
+"decomp": "⿰言忍"
+},
+"識": {
+"rads": [
+"言"
+],
+"def": "knowledge; to understand, to recognize, ",
+"pinyin": "shí",
+"radical": "言",
+"decomp": "⿰言戠"
+},
+"好": {
+"rads": [
+"女"
+],
+"def": "good, excellent, fine; proper, suitable;",
+"pinyin": "hǎo",
+"radical": "女",
+"decomp": "⿰女子"
+},
+"媽": {
+"rads": [
+"女"
+],
+"def": "mother, mama",
+"pinyin": "mā",
+"radical": "女",
+"decomp": "⿰女馬"
+},
+"姐": {
+"rads": [
+"女"
+],
+"def": "elder sister; miss, young lady",
+"pinyin": "jiě",
+"radical": "女",
+"decomp": "⿰女且"
+},
+"妹": {
+"rads": [
+"女"
+],
+"def": "younger sister",
+"pinyin": "mèi",
+"radical": "女",
+"decomp": "⿰女未"
+},
+"她": {
+"rads": [
+"女"
+],
+"def": "she, her",
+"pinyin": "tā",
+"radical": "女",
+"decomp": "⿰女也"
+},
+"婚": {
+"rads": [
+"女"
+],
+"def": "to get married; marriage, wedding",
+"pinyin": "hūn",
+"radical": "女",
+"decomp": "⿰女昏"
+},
+"始": {
+"rads": [
+"女"
+],
+"def": "to begin, to start; beginning",
+"pinyin": "shǐ",
+"radical": "女",
+"decomp": "⿰女台"
+},
+"姓": {
+"rads": [
+"女"
+],
+"def": "name, family name, surname; clan, people",
+"pinyin": "xìng",
+"radical": "女",
+"decomp": "⿰女生"
+},
+"安": {
+"rads": [
+"女"
+],
+"def": "peaceful, tranquil, quiet",
+"pinyin": "ān",
+"radical": "宀",
+"decomp": "⿱宀女"
+},
+"山": {
+"rads": [
+"山"
+],
+"def": "mountain, hill, peak",
+"pinyin": "shān",
+"radical": "山",
+"decomp": "⿶凵丨"
+},
+"岩": {
+"rads": [
+"山"
+],
+"def": "cliff; rocks; mountain",
+"pinyin": "yán",
+"radical": "山",
+"decomp": "⿱山石"
+},
+"島": {
+"rads": [
+"山"
+],
+"def": "island",
+"pinyin": "dǎo",
+"radical": "山",
+"decomp": "⿹烏山"
+},
+"峰": {
+"rads": [
+"山"
+],
+"def": "peak, summit; a camel's hump",
+"pinyin": "fēng",
+"radical": "山",
+"decomp": "⿰山夆"
+},
+"界": {
+"rads": [
+"田"
+],
+"def": "boundary, limit; domain; society, the wo",
+"pinyin": "jiè",
+"radical": "田",
+"decomp": "⿱田介"
+},
+"留": {
+"rads": [
+"田"
+],
+"def": "to stay, to remain; to preserve, to keep",
+"pinyin": "liú",
+"radical": "田",
+"decomp": "⿱卯田"
+},
+"畫": {
+"rads": [
+"田"
+],
+"def": "picture, painting, drawing; to draw",
+"pinyin": "huà",
+"radical": "田",
+"decomp": "⿱聿⿱田一"
+},
+"當": {
+"rads": [
+"田"
+],
+"def": "appropriate, timely; to act, to serve; t",
+"pinyin": "dāng",
+"radical": "田",
+"decomp": "⿱尚田"
+},
+"看": {
+"rads": [
+"手",
+"目"
+],
+"def": "to look, to see; to examine, to scrutini",
+"pinyin": "kàn",
+"radical": "目",
+"decomp": "⿱手目"
+},
+"眼": {
+"rads": [
+"目"
+],
+"def": "eyelet, hole, opening",
+"pinyin": "yǎn",
+"radical": "目",
+"decomp": "⿰目艮"
+},
+"睛": {
+"rads": [
+"目"
+],
+"def": "eyeball; pupil",
+"pinyin": "jīng",
+"radical": "目",
+"decomp": "⿰目青"
+},
+"睡": {
+"rads": [
+"目"
+],
+"def": "to sleep, to doze",
+"pinyin": "shuì",
+"radical": "目",
+"decomp": "⿰目垂"
+},
+"着": {
+"rads": [
+"目"
+],
+"def": "to make a move, to take action",
+"pinyin": "zhe",
+"radical": "目",
+"decomp": "⿸羊目"
+},
+"助": {
+"rads": [
+"力"
+],
+"def": "to help, to aid, to assist",
+"pinyin": "zhù",
+"radical": "力",
+"decomp": "⿰且力"
+},
+"動": {
+"rads": [
+"力"
+],
+"def": "to move, to happen; movement, action",
+"pinyin": "dòng",
+"radical": "力",
+"decomp": "⿰重力"
+},
+"努": {
+"rads": [
+"力"
+],
+"def": "to exert, to strive, to make an effort; ",
+"pinyin": "nǔ",
+"radical": "力",
+"decomp": "⿱奴力"
+},
+"勞": {
+"rads": [
+"力"
+],
+"def": "to labor, to toil; to do manual work",
+"pinyin": "láo",
+"radical": "力",
+"decomp": "⿳炏冖力"
+},
+"地": {
+"rads": [
+"土"
+],
+"def": "earth, ground, soil; land, region; struc",
+"pinyin": "de",
+"radical": "土",
+"decomp": "⿰土也"
+},
+"場": {
+"rads": [
+"土"
+],
+"def": "field, open space; market, square; stage",
+"pinyin": "chǎng",
+"radical": "土",
+"decomp": "⿰土昜"
+},
+"坐": {
+"rads": [
+"土"
+],
+"def": "seat; to sit; to ride, to travel by",
+"pinyin": "zuò",
+"radical": "土",
+"decomp": "⿻从土"
+},
+"城": {
+"rads": [
+"土"
+],
+"def": "castle, city, town; municipality",
+"pinyin": "chéng",
+"radical": "土",
+"decomp": "⿰土成"
+},
+"在": {
+"rads": [
+"土"
+],
+"def": "at, in, on; to exist; used to indicate t",
+"pinyin": "zài",
+"radical": "土",
+"decomp": "⿸才土"
+},
+"坡": {
+"rads": [
+"土"
+],
+"def": "slope, hillside, embankment",
+"pinyin": "pō",
+"radical": "土",
+"decomp": "⿰土皮"
+},
+"塊": {
+"rads": [
+"土"
+],
+"def": "piece, lump, chunk; dollar; measure word",
+"pinyin": "kuài",
+"radical": "土",
+"decomp": "⿰土鬼"
+}
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f7f4ed">
+<title>部首 Radicals</title>
+<style>
+@font-face{font-family:"RadicalsTC";src:url("data:font/woff2;base64,__FONT_BASE64__") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+  :root{
+    --ink:#2b2722; --ink-soft:#6b6359; --faint:#a89e90;
+    --paper:#f7f4ed; --card:#fffdf8; --line:#e6ddcf;
+    --seal:#b5462f; --seal-soft:#e9d6cf;
+    --jade:#3f7a5e; --jade-soft:#dcebe2;
+    --gold:#c8983b;
+    --r:16px;
+    --safe-t:env(safe-area-inset-top,0px);
+    --safe-b:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#ece5d8; --ink-soft:#b3a795; --faint:#7d7363;
+      --paper:#1c1916; --card:#262019; --line:#3a3228;
+      --seal:#e0795f; --seal-soft:#3a241d;
+      --jade:#6fb38e; --jade-soft:#1f3127;
+      --gold:#d8b15e;
+    }
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Heiti TC","Noto Sans CJK TC",sans-serif;
+    background:var(--paper); color:var(--ink);
+    min-height:100vh; min-height:100dvh;
+    padding:var(--safe-t) 0 var(--safe-b);
+    overscroll-behavior:none; user-select:none; -webkit-user-select:none;
+  }
+  .cjk{font-family:"RadicalsTC","GenJyuuGothic","jf-openhuninn","PingFang TC","Heiti TC","Noto Sans CJK TC",sans-serif;}
+  .app{max-width:520px; margin:0 auto; padding:0 18px 32px;}
+
+  header{padding:18px 0 8px; display:flex; align-items:center; justify-content:space-between;}
+  .brand{display:flex; align-items:baseline; gap:10px;}
+  .brand .mark{font-size:32px; font-weight:600; letter-spacing:1px;}
+  .brand .sub{font-size:15px; color:var(--faint); letter-spacing:2px; text-transform:uppercase;}
+  .date{font-size:15px; color:var(--ink-soft); text-align:right;}
+
+  .meta{display:flex; justify-content:space-between; align-items:center; margin:6px 2px 2px; font-size:15px; color:var(--faint);}
+  .meta .pill{display:inline-flex; gap:5px; align-items:center;}
+
+  .hintwrap{margin:14px 0 6px;}
+  .hint-cap{font-size:14px; color:var(--faint); letter-spacing:1.5px; text-transform:uppercase; text-align:center; margin-bottom:12px;}
+  .hints{display:flex; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .slot{display:flex; flex-direction:column; align-items:center; gap:7px;}
+  .rad{width:72px; height:72px; border-radius:14px; background:var(--card);
+    border:1px solid var(--line); display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:2px;}
+  .rad .g{font-size:38px; line-height:1; color:var(--ink);}
+  .rad .m{font-size:13px; color:var(--faint); letter-spacing:.3px;}
+  .drop{width:88px; min-height:88px; border-radius:14px;
+    border:2px dashed var(--line); display:flex; align-items:center; justify-content:center;
+    transition:.15s; background:transparent;}
+  .drop.target{border-color:var(--seal); background:var(--seal-soft);}
+  .drop.ok{border-style:solid; border-color:var(--jade); background:var(--jade-soft);}
+  .drop.bad{border-style:solid; border-color:var(--seal); animation:shake .35s;}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+  .tray-cap{font-size:14px; color:var(--faint); letter-spacing:1.5px; text-transform:uppercase; text-align:center; margin:24px 0 12px;}
+  .tray{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; min-height:96px;}
+
+  .tile{width:88px; border-radius:14px; background:var(--card); border:1px solid var(--line);
+    overflow:hidden; cursor:pointer; transition:transform .12s, box-shadow .12s, border-color .12s;
+    position:relative;}
+  .tile:active{transform:scale(.96);}
+  .tile.picked{border-color:var(--seal); box-shadow:0 0 0 2px var(--seal);}
+  .tile.placed-mini{width:72px;}
+  .tile .face{font-size:45px; text-align:center; padding:18px 0 4px; color:var(--ink); line-height:1;}
+  .tile.placed-mini .face{font-size:38px; padding:9px 0;}
+  .tile .rev{display:flex; border-top:1px solid var(--line); background:var(--seal-soft);}
+  .tile .rev .c{flex:1; text-align:center; font-size:16px; padding:4px 0; color:var(--seal); line-height:1.2;}
+  .tile .rev .c+.c{border-left:1px solid var(--line);}
+  .tile .peekbar{justify-content:center; align-items:center; background:var(--paper); cursor:pointer;}
+  .tile .peekbar:active{background:var(--seal-soft);}
+  .peekdot{font-size:20px; color:var(--faint); padding:4px 0; line-height:1.2;}
+  .pin{text-align:center; font-size:13px; color:var(--faint); padding:0 0 8px; line-height:1;}
+
+  .status{text-align:center; font-size:16px; color:var(--ink-soft); min-height:20px; margin-top:18px;}
+
+  .win{margin-top:18px; padding:20px; border-radius:var(--r); background:var(--jade-soft);
+    border:1px solid var(--jade); text-align:center;}
+  .win .big{font-size:21px; font-weight:600; color:var(--jade); margin-bottom:4px;}
+  .win .small{font-size:16px; color:var(--ink-soft);}
+  .win button{margin-top:14px;}
+
+  .actions{display:flex; gap:10px; justify-content:center; margin-top:22px;}
+  button.act{padding:10px 20px; font-size:16px; border-radius:12px; background:transparent;
+    border:1px solid var(--line); color:var(--ink-soft); cursor:pointer; font-family:inherit;}
+  button.act:active{transform:scale(.97);}
+  button.go{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+
+  .ghost{position:fixed; pointer-events:none; z-index:99; opacity:.92; transform:translate(-50%,-50%) scale(1.04);}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <span class="mark cjk">部首</span>
+      <span class="sub">radicals</span>
+    </div>
+    <div class="date" id="date"></div>
+  </header>
+
+  <div class="meta">
+    <span class="pill" id="hintsUsed">Peeks: 0</span>
+    <span class="pill" id="streak"></span>
+    <span class="pill" id="timer">0:00</span>
+  </div>
+
+  <div class="hintwrap">
+    <div class="hint-cap">find the radical inside each character</div>
+    <div class="hints" id="hints"></div>
+  </div>
+
+  <div class="tray-cap">tap a character to hear it, then tap a slot</div>
+  <div class="tray" id="tray"></div>
+
+  <div class="status" id="status"></div>
+  <div id="winArea"></div>
+
+  <div class="actions">
+    <button class="act" id="newBtn">New puzzle</button>
+    <button class="act" id="resetBtn">Reset</button>
+  </div>
+</div>
+
+<script id="bank" type="application/json">__BANK__</script>
+<script>
+const BANK = JSON.parse(document.getElementById('bank').textContent);
+
+let puzzle=null, place={}, revealed={}, picked=null, peeks=0, t0=null, tInt=null, solved=false;
+
+const $=id=>document.getElementById(id);
+function todayStr(){
+  try{ return new Date().toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'}); }
+  catch(e){ const d=new Date(); return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear(); }
+}
+
+let zhVoice=null, ttsOK=false;
+try{ ttsOK = ('speechSynthesis' in window) && typeof SpeechSynthesisUtterance!=='undefined'; }catch(e){ ttsOK=false; }
+function pickVoice(){
+  if(!ttsOK) return;
+  try{
+    const vs=speechSynthesis.getVoices()||[];
+    zhVoice = vs.find(v=>v.lang==='zh-TW')
+           || vs.find(v=>/^zh(-|_)?(TW|HK|Hant)/i.test(v.lang||''))
+           || vs.find(v=>v.lang && v.lang.toLowerCase().startsWith('zh'))
+           || null;
+  }catch(e){}
+}
+try{ if(ttsOK){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; } }catch(e){}
+function speak(ch){
+  if(!ttsOK) return;
+  try{
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(ch);
+    u.lang='zh-TW';
+    if(zhVoice) u.voice=zhVoice;
+    u.rate=0.85;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+function load(store){try{return JSON.parse(localStorage.getItem(store)||'{}')}catch(e){return{}}}
+function save(store,v){try{localStorage.setItem(store,JSON.stringify(v))}catch(e){}}
+
+function dayIndex(){
+  const epoch=new Date(2024,0,1);
+  return Math.floor((Date.now()-epoch)/86400000);
+}
+function pickDaily(){
+  return BANK[dayIndex()%BANK.length];
+}
+function pickRandom(){
+  return BANK[Math.floor(Math.random()*BANK.length)];
+}
+
+function start(p){
+  puzzle=p; place={}; revealed={}; picked=null; peeks=0; t0=null; solved=false;
+  clearInterval(tInt);
+  $('hintsUsed').textContent='Peeks: 0';
+  $('timer').textContent='0:00';
+  $('status').textContent='';
+  $('winArea').innerHTML='';
+  updateStreak();
+  render();
+}
+
+function updateStreak(){
+  const s=load('progress');
+  const n=s.streak||0;
+  $('streak').textContent = n>0 ? ('Streak: '+n) : '';
+}
+
+function render(){
+  const H=$('hints'); H.innerHTML='';
+  puzzle.hints.forEach(h=>{
+    const slot=document.createElement('div'); slot.className='slot';
+    const rad=document.createElement('div'); rad.className='rad';
+    rad.innerHTML=`<span class="g cjk">${h.r}</span><span class="m">${h.p}</span>`;
+    const drop=document.createElement('div'); drop.className='drop'; drop.dataset.r=h.r;
+    const found=Object.entries(place).find(([c,r])=>r===h.r);
+    if(found){
+      const td=puzzle.tiles.find(t=>t.char===found[0]);
+      const mini=document.createElement('div');
+      mini.className='tile placed-mini';
+      mini.innerHTML=`<div class="face cjk">${td.char}</div>`;
+      mini.dataset.char=td.char;
+      if(puzzle.solution[td.char]===h.r) drop.classList.add('ok');
+      mini.onclick=e=>{e.stopPropagation(); returnTile(td.char);};
+      drop.appendChild(mini);
+    }
+    drop.onclick=()=>onDrop(h.r);
+    slot.appendChild(rad); slot.appendChild(drop);
+    H.appendChild(slot);
+  });
+
+  const T=$('tray'); T.innerHTML='';
+  puzzle.tiles.forEach(t=>{
+    if(place[t.char]!==undefined) return;
+    const tile=document.createElement('div');
+    tile.className='tile'+(picked===t.char?' picked':'');
+    tile.dataset.char=t.char;
+    let html=`<div class="face cjk">${t.char}</div><div class="pin">${t.pinyin}</div>`;
+    if(revealed[t.char]){
+      const parts=t.reveal.split('→');
+      const cells=parts.map(p=>`<div class="c cjk">${p}</div>`).join('');
+      html+=`<div class="rev">${cells}</div>`;
+    }else{
+      html+=`<div class="rev peekbar" data-peek="${t.char}"><div class="peekdot">&#9678;</div></div>`;
+    }
+    tile.innerHTML=html;
+    tile.onclick=e=>{
+      const peek=e.target.closest('[data-peek]');
+      if(peek){ doPeek(peek.dataset.peek); return; }
+      pickTile(t.char);
+    };
+    T.appendChild(tile);
+  });
+}
+
+function pickTile(c){
+  speak(c);
+  if(solved){ picked=null; return; }
+  picked = (picked===c)? null : c;
+  render();
+}
+
+function returnTile(c){
+  speak(c);
+  if(solved) return;
+  delete place[c];
+  picked=null;
+  $('winArea').innerHTML='';
+  $('status').textContent='';
+  render();
+}
+
+function onDrop(r){
+  if(solved||!picked) return;
+  startTimer();
+  const prev=Object.entries(place).find(([c,rr])=>rr===r);
+  if(prev) delete place[prev[0]];
+  for(const c in place){ if(c===picked) delete place[c]; }
+  place[picked]=r;
+  picked=null;
+  render();
+  check();
+}
+
+function doPeek(c){
+  if(revealed[c]||solved) return;
+  startTimer();
+  revealed[c]=true; peeks++;
+  $('hintsUsed').textContent='Peeks: '+peeks;
+  render();
+}
+
+function check(){
+  const all=puzzle.tiles.every(t=>place[t.char]!==undefined);
+  if(!all){ $('status').textContent=''; return; }
+  const right=puzzle.tiles.every(t=>puzzle.solution[t.char]===place[t.char]);
+  if(right){
+    solved=true; clearInterval(tInt);
+    const sec=t0?Math.round((Date.now()-t0)/1000):0;
+    const m=Math.floor(sec/60), s=sec%60;
+    const note = peeks===0?'No peeks — radical master.':(peeks+' peek'+(peeks>1?'s':'')+' used.');
+    recordWin();
+    $('status').textContent='';
+    $('winArea').innerHTML=
+      `<div class="win"><div class="big">Solved in ${m}:${String(s).padStart(2,'0')}</div>`+
+      `<div class="small">${note}</div>`+
+      `<button class="act go" onclick="nextPuzzle()">Next puzzle</button></div>`;
+  }else{
+    const wrong=puzzle.tiles.filter(t=>place[t.char]&&puzzle.solution[t.char]!==place[t.char]);
+    $('status').textContent=`${wrong.length} not in the right place yet`;
+    wrong.forEach(t=>{
+      const z=document.querySelector(`.drop[data-r="${place[t.char]}"]`);
+      if(z){z.classList.add('bad'); setTimeout(()=>z.classList.remove('bad'),360);}
+    });
+  }
+}
+
+function recordWin(){
+  const s=load('progress');
+  const today=new Date().toDateString();
+  if(s.lastWin!==today){
+    const y=new Date(Date.now()-86400000).toDateString();
+    s.streak = (s.lastWin===y)?(s.streak||0)+1:1;
+    s.lastWin=today;
+  }
+  s.total=(s.total||0)+1;
+  save('progress',s);
+  updateStreak();
+}
+
+function startTimer(){
+  if(t0) return;
+  t0=Date.now();
+  tInt=setInterval(()=>{
+    const sec=Math.round((Date.now()-t0)/1000);
+    $('timer').textContent=`${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}`;
+  },1000);
+}
+
+function nextPuzzle(){ start(pickRandom()); }
+
+function boot(){
+  try{
+    $('newBtn').onclick=nextPuzzle;
+    $('resetBtn').onclick=()=>start(puzzle);
+    $('date').textContent=todayStr();
+    start(pickDaily());
+  }catch(err){
+    var s=document.getElementById('status');
+    if(s){ s.textContent='Something went wrong loading the puzzle. Tap New puzzle.'; }
+    try{ $('newBtn').onclick=nextPuzzle; $('resetBtn').onclick=()=>start(puzzle); start(BANK[0]); }catch(e){}
+  }
+}
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded', boot);
+}else{
+  boot();
+}
+</script>
+</body>
+</html>

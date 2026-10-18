@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f7f4ed">
+<title>部首 Radicals</title>
+<style>
+@font-face{font-family:"RadicalsTC";src:url("data:font/woff2;base64,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") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+  :root{
+    --ink:#2b2722; --ink-soft:#6b6359; --faint:#a89e90;
+    --paper:#f7f4ed; --card:#fffdf8; --line:#e6ddcf;
+    --seal:#b5462f; --seal-soft:#e9d6cf;
+    --jade:#3f7a5e; --jade-soft:#dcebe2;
+    --gold:#c8983b;
+    --r:16px;
+    --safe-t:env(safe-area-inset-top,0px);
+    --safe-b:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#ece5d8; --ink-soft:#b3a795; --faint:#7d7363;
+      --paper:#1c1916; --card:#262019; --line:#3a3228;
+      --seal:#e0795f; --seal-soft:#3a241d;
+      --jade:#6fb38e; --jade-soft:#1f3127;
+      --gold:#d8b15e;
+    }
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Heiti TC","Noto Sans CJK TC",sans-serif;
+    background:var(--paper); color:var(--ink);
+    min-height:100vh; min-height:100dvh;
+    padding:var(--safe-t) 0 var(--safe-b);
+    overscroll-behavior:none; user-select:none; -webkit-user-select:none;
+  }
+  .cjk{font-family:"RadicalsTC","GenJyuuGothic","jf-openhuninn","PingFang TC","Heiti TC","Noto Sans CJK TC",sans-serif;}
+  .app{max-width:520px; margin:0 auto; padding:0 18px 32px;}
+
+  header{padding:18px 0 8px; display:flex; align-items:center; justify-content:space-between;}
+  .brand{display:flex; align-items:baseline; gap:10px;}
+  .brand .mark{font-size:32px; font-weight:600; letter-spacing:1px;}
+  .brand .sub{font-size:15px; color:var(--faint); letter-spacing:2px; text-transform:uppercase;}
+  .date{font-size:15px; color:var(--ink-soft); text-align:right;}
+
+  .meta{display:flex; justify-content:space-between; align-items:center; margin:6px 2px 2px; font-size:15px; color:var(--faint);}
+  .meta .pill{display:inline-flex; gap:5px; align-items:center;}
+
+  .hintwrap{margin:14px 0 6px;}
+  .hint-cap{font-size:14px; color:var(--faint); letter-spacing:1.5px; text-transform:uppercase; text-align:center; margin-bottom:12px;}
+  .hints{display:flex; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .slot{display:flex; flex-direction:column; align-items:center; gap:7px;}
+  .rad{width:72px; height:72px; border-radius:14px; background:var(--card);
+    border:1px solid var(--line); display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:2px;}
+  .rad .g{font-size:38px; line-height:1; color:var(--ink);}
+  .rad .m{font-size:13px; color:var(--faint); letter-spacing:.3px;}
+  .drop{width:88px; min-height:88px; border-radius:14px;
+    border:2px dashed var(--line); display:flex; align-items:center; justify-content:center;
+    transition:.15s; background:transparent;}
+  .drop.target{border-color:var(--seal); background:var(--seal-soft);}
+  .drop.ok{border-style:solid; border-color:var(--jade); background:var(--jade-soft);}
+  .drop.bad{border-style:solid; border-color:var(--seal); animation:shake .35s;}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+  .tray-cap{font-size:14px; color:var(--faint); letter-spacing:1.5px; text-transform:uppercase; text-align:center; margin:24px 0 12px;}
+  .tray{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; min-height:96px;}
+
+  .tile{width:88px; border-radius:14px; background:var(--card); border:1px solid var(--line);
+    overflow:hidden; cursor:pointer; transition:transform .12s, box-shadow .12s, border-color .12s;
+    position:relative;}
+  .tile:active{transform:scale(.96);}
+  .tile.picked{border-color:var(--seal); box-shadow:0 0 0 2px var(--seal);}
+  .tile.placed-mini{width:72px;}
+  .tile .face{font-size:45px; text-align:center; padding:18px 0 4px; color:var(--ink); line-height:1;}
+  .tile.placed-mini .face{font-size:38px; padding:9px 0;}
+  .tile .rev{display:flex; border-top:1px solid var(--line); background:var(--seal-soft);}
+  .tile .rev .c{flex:1; text-align:center; font-size:16px; padding:4px 0; color:var(--seal); line-height:1.2;}
+  .tile .rev .c+.c{border-left:1px solid var(--line);}
+  .tile .peekbar{justify-content:center; align-items:center; background:var(--paper); cursor:pointer;}
+  .tile .peekbar:active{background:var(--seal-soft);}
+  .peekdot{font-size:20px; color:var(--faint); padding:4px 0; line-height:1.2;}
+  .pin{text-align:center; font-size:13px; color:var(--faint); padding:0 0 8px; line-height:1;}
+
+  .status{text-align:center; font-size:16px; color:var(--ink-soft); min-height:20px; margin-top:18px;}
+
+  .win{margin-top:18px; padding:20px; border-radius:var(--r); background:var(--jade-soft);
+    border:1px solid var(--jade); text-align:center;}
+  .win .big{font-size:21px; font-weight:600; color:var(--jade); margin-bottom:4px;}
+  .win .small{font-size:16px; color:var(--ink-soft);}
+  .win button{margin-top:14px;}
+
+  .actions{display:flex; gap:10px; justify-content:center; margin-top:22px;}
+  button.act{padding:10px 20px; font-size:16px; border-radius:12px; background:transparent;
+    border:1px solid var(--line); color:var(--ink-soft); cursor:pointer; font-family:inherit;}
+  button.act:active{transform:scale(.97);}
+  button.go{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+
+  .ghost{position:fixed; pointer-events:none; z-index:99; opacity:.92; transform:translate(-50%,-50%) scale(1.04);}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <span class="mark cjk">部首</span>
+      <span class="sub">radicals</span>
+    </div>
+    <div class="date" id="date"></div>
+  </header>
+
+  <div class="meta">
+    <span class="pill" id="hintsUsed">Peeks: 0</span>
+    <span class="pill" id="streak"></span>
+    <span class="pill" id="timer">0:00</span>
+  </div>
+
+  <div class="hintwrap">
+    <div class="hint-cap">find the radical inside each character</div>
+    <div class="hints" id="hints"></div>
+  </div>
+
+  <div class="tray-cap">tap a character to hear it, then tap a slot</div>
+  <div class="tray" id="tray"></div>
+
+  <div class="status" id="status"></div>
+  <div id="winArea"></div>
+
+  <div class="actions">
+    <button class="act" id="newBtn">New puzzle</button>
+    <button class="act" id="resetBtn">Reset</button>
+  </div>
+</div>
+
+<script id="bank" type="application/json">[{"tiles": [{"char": "是", "pinyin": "shì", "reveal": "日", "def": "to be; indeed, right, yes; okay"}, {"char": "男", "pinyin": "nán", "reveal": "田", "def": "man, boy; male; baron; surname"}, {"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "湖", "pinyin": "hú", "reveal": "氵→水", "def": "lake; Hubei, Hunan; bluish-green"}, {"char": "接", "pinyin": "jiē", "reveal": "扌→手", "def": "to connect, to join; to receive, to meet"}], "hints": [{"r": "日", "m": "sun", "p": "rì"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"是": "日", "湖": "水", "接": "手", "男": "田", "信": "言"}}, {"tiles": [{"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "坡", "pinyin": "pō", "reveal": "土", "def": "slope, hillside, embankment"}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "岩", "pinyin": "yán", "reveal": "山", "def": "cliff; rocks; mountain"}, {"char": "休", "pinyin": "xiū", "reveal": "亻→人", "def": "to rest; to stop; to retire"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "土", "m": "earth", "p": "tǔ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"坡": "土", "岩": "山", "信": "言", "加": "力", "休": "人"}}, {"tiles": [{"char": "流", "pinyin": "liú", "reveal": "氵→水", "def": "to flow, to drift, to circulate; class"}, {"char": "朋", "pinyin": "péng", "reveal": "月", "def": "friend, pal, acquaintance"}, {"char": "看", "pinyin": "kàn", "reveal": "手", "def": "to look, to see; to examine, to scrutini"}, {"char": "照", "pinyin": "zhào", "reveal": "灬→火", "def": "to shine, to reflect, to illuminate"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}], "hints": [{"r": "月", "m": "moon", "p": "yuè"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"流": "水", "朋": "月", "照": "火", "看": "手", "思": "田"}}, {"tiles": [{"char": "界", "pinyin": "jiè", "reveal": "田", "def": "boundary, limit; domain; society, the wo"}, {"char": "海", "pinyin": "hǎi", "reveal": "氵→水", "def": "sea, ocean; maritime"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}, {"char": "岩", "pinyin": "yán", "reveal": "山", "def": "cliff; rocks; mountain"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"界": "田", "海": "水", "岩": "山", "看": "目", "男": "力"}}, {"tiles": [{"char": "場", "pinyin": "chǎng", "reveal": "土", "def": "field, open space; market, square; stage"}, {"char": "眼", "pinyin": "yǎn", "reveal": "目", "def": "eyelet, hole, opening"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "照", "pinyin": "zhào", "reveal": "灬→火", "def": "to shine, to reflect, to illuminate"}, {"char": "信", "pinyin": "xìn", "reveal": "亻→人", "def": "to trust, to believe; letter, sign"}], "hints": [{"r": "土", "m": "earth", "p": "tǔ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"場": "土", "眼": "目", "照": "火", "思": "田", "信": "人"}}, {"tiles": [{"char": "島", "pinyin": "dǎo", "reveal": "山", "def": "island"}, {"char": "感", "pinyin": "gǎn", "reveal": "心", "def": "to affect, to move, to touch; to perceiv"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "作", "pinyin": "zuò", "reveal": "亻→人", "def": "to make; to write, to compose; to act, t"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"島": "山", "感": "心", "作": "人", "看": "目", "思": "田"}}, {"tiles": [{"char": "怕", "pinyin": "pà", "reveal": "忄→心", "def": "to fear, to be afraid of; apprehensive"}, {"char": "始", "pinyin": "shǐ", "reveal": "女", "def": "to begin, to start; beginning"}, {"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "你", "pinyin": "nǐ", "reveal": "亻→人", "def": "you, second person pronoun"}, {"char": "明", "pinyin": "míng", "reveal": "日", "def": "bright, clear; to explain, to understand"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"怕": "心", "始": "女", "你": "人", "信": "言", "明": "日"}}, {"tiles": [{"char": "推", "pinyin": "tuī", "reveal": "扌→手", "def": "to push; to expel; to drive; to decline"}, {"char": "森", "pinyin": "sēn", "reveal": "木", "def": "forest; luxuriant vegetation"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "烈", "pinyin": "liè", "reveal": "灬→火", "def": "fiery, violent; ardent, vehement"}], "hints": [{"r": "力", "m": "strength", "p": "lì"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "木", "m": "tree", "p": "mù"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"推": "手", "森": "木", "烈": "火", "思": "田", "加": "力"}}, {"tiles": [{"char": "時", "pinyin": "shí", "reveal": "日", "def": "time, season; period, era, age"}, {"char": "記", "pinyin": "jì", "reveal": "言", "def": "mark, sign; to note, to record"}, {"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "始", "pinyin": "shǐ", "reveal": "女", "def": "to begin, to start; beginning"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"時": "日", "記": "言", "始": "女", "男": "力", "明": "月"}}, {"tiles": [{"char": "助", "pinyin": "zhù", "reveal": "力", "def": "to help, to aid, to assist"}, {"char": "清", "pinyin": "qīng", "reveal": "氵→水", "def": "clean, pure; clear, distinct; peaceful"}, {"char": "山", "pinyin": "shān", "reveal": "山", "def": "mountain, hill, peak"}, {"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"助": "力", "清": "水", "山": "山", "信": "言", "加": "口"}}, {"tiles": [{"char": "課", "pinyin": "kè", "reveal": "言", "def": "subject, lesson, course; classwork"}, {"char": "勞", "pinyin": "láo", "reveal": "力", "def": "to labor, to toil; to do manual work"}, {"char": "男", "pinyin": "nán", "reveal": "田", "def": "man, boy; male; baron; surname"}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "清", "pinyin": "qīng", "reveal": "氵→水", "def": "clean, pure; clear, distinct; peaceful"}], "hints": [{"r": "月", "m": "moon", "p": "yuè"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"課": "言", "勞": "力", "清": "水", "男": "田", "明": "月"}}, {"tiles": [{"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "個", "pinyin": "gè", "reveal": "亻→人", "def": "this, that; single; measure word for ind"}, {"char": "吃", "pinyin": "chī", "reveal": "口", "def": "to eat; to drink; to suffer, to endure, "}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "場", "pinyin": "chǎng", "reveal": "土", "def": "field, open space; market, square; stage"}], "hints": [{"r": "土", "m": "earth", "p": "tǔ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "口", "m": "mouth", "p": "kǒu"}], "solution": {"個": "人", "吃": "口", "場": "土", "加": "力", "明": "月"}}, {"tiles": [{"char": "朋", "pinyin": "péng", "reveal": "月", "def": "friend, pal, acquaintance"}, {"char": "妹", "pinyin": "mèi", "reveal": "女", "def": "younger sister"}, {"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "流", "pinyin": "liú", "reveal": "氵→水", "def": "to flow, to drift, to circulate; class"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"朋": "月", "妹": "女", "流": "水", "信": "言", "思": "田"}}, {"tiles": [{"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "個", "pinyin": "gè", "reveal": "亻→人", "def": "this, that; single; measure word for ind"}, {"char": "認", "pinyin": "rèn", "reveal": "言", "def": "to know, to recognize, to understand"}, {"char": "拍", "pinyin": "pāi", "reveal": "扌→手", "def": "to clap, to tap; to hit, to beat, to sla"}], "hints": [{"r": "人", "m": "person", "p": "rén"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"個": "人", "認": "言", "拍": "手", "加": "力", "思": "田"}}, {"tiles": [{"char": "把", "pinyin": "bǎ", "reveal": "扌→手", "def": "to grasp, to hold; to guard, to take; ha"}, {"char": "休", "pinyin": "xiū", "reveal": "木", "def": "to rest; to stop; to retire"}, {"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}, {"char": "煮", "pinyin": "zhǔ", "reveal": "灬→火", "def": "to boil, to cook"}, {"char": "記", "pinyin": "jì", "reveal": "言", "def": "mark, sign; to note, to record"}], "hints": [{"r": "手", "m": "hand", "p": "shǒu"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "木", "m": "tree", "p": "mù"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"把": "手", "煮": "火", "記": "言", "休": "木", "加": "口"}}, {"tiles": [{"char": "休", "pinyin": "xiū", "reveal": "木", "def": "to rest; to stop; to retire"}, {"char": "湖", "pinyin": "hú", "reveal": "氵→水", "def": "lake; Hubei, Hunan; bluish-green"}, {"char": "是", "pinyin": "shì", "reveal": "日", "def": "to be; indeed, right, yes; okay"}, {"char": "推", "pinyin": "tuī", "reveal": "扌→手", "def": "to push; to expel; to drive; to decline"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}], "hints": [{"r": "日", "m": "sun", "p": "rì"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "木", "m": "tree", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"湖": "水", "是": "日", "推": "手", "休": "木", "思": "田"}}, {"tiles": [{"char": "拿", "pinyin": "ná", "reveal": "手", "def": "to bring, to grasp, to hold, to take"}, {"char": "妹", "pinyin": "mèi", "reveal": "女", "def": "younger sister"}, {"char": "信", "pinyin": "xìn", "reveal": "亻→人", "def": "to trust, to believe; letter, sign"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "在", "pinyin": "zài", "reveal": "土", "def": "at, in, on; to exist; used to indicate t"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "土", "m": "earth", "p": "tǔ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "手", "m": "hand", "p": "shǒu"}], "solution": {"拿": "手", "妹": "女", "在": "土", "信": "人", "看": "目"}}, {"tiles": [{"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "慢", "pinyin": "màn", "reveal": "忄→心", "def": "slowly, leisurely; sluggish"}, {"char": "話", "pinyin": "huà", "reveal": "言", "def": "talk, speech; language, dialect"}, {"char": "媽", "pinyin": "mā", "reveal": "女", "def": "mother, mama"}, {"char": "休", "pinyin": "xiū", "reveal": "木", "def": "to rest; to stop; to retire"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "木", "m": "tree", "p": "mù"}], "solution": {"慢": "心", "話": "言", "媽": "女", "明": "月", "休": "木"}}, {"tiles": [{"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "打", "pinyin": "dǎ", "reveal": "扌→手", "def": "to attack, to beat, to hit, to strike"}, {"char": "吃", "pinyin": "chī", "reveal": "口", "def": "to eat; to drink; to suffer, to endure, "}, {"char": "快", "pinyin": "kuài", "reveal": "忄→心", "def": "speedy, rapid, quick; soon"}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}], "hints": [{"r": "心", "m": "heart", "p": "xīn"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"打": "手", "吃": "口", "快": "心", "思": "田", "加": "力"}}, {"tiles": [{"char": "森", "pinyin": "sēn", "reveal": "木", "def": "forest; luxuriant vegetation"}, {"char": "是", "pinyin": "shì", "reveal": "日", "def": "to be; indeed, right, yes; okay"}, {"char": "思", "pinyin": "sī", "reveal": "心", "def": "to think, to ponder, to consider; final "}, {"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}, {"char": "婚", "pinyin": "hūn", "reveal": "女", "def": "to get married; marriage, wedding"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "木", "m": "tree", "p": "mù"}], "solution": {"森": "木", "是": "日", "婚": "女", "思": "心", "男": "力"}}, {"tiles": [{"char": "睛", "pinyin": "jīng", "reveal": "目", "def": "eyeball; pupil"}, {"char": "當", "pinyin": "dāng", "reveal": "田", "def": "appropriate, timely; to act, to serve; t"}, {"char": "思", "pinyin": "sī", "reveal": "心", "def": "to think, to ponder, to consider; final "}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "拍", "pinyin": "pāi", "reveal": "扌→手", "def": "to clap, to tap; to hit, to beat, to sla"}], "hints": [{"r": "心", "m": "heart", "p": "xīn"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"睛": "目", "當": "田", "拍": "手", "思": "心", "加": "力"}}, {"tiles": [{"char": "認", "pinyin": "rèn", "reveal": "言", "def": "to know, to recognize, to understand"}, {"char": "休", "pinyin": "xiū", "reveal": "木", "def": "to rest; to stop; to retire"}, {"char": "朋", "pinyin": "péng", "reveal": "月", "def": "friend, pal, acquaintance"}, {"char": "信", "pinyin": "xìn", "reveal": "亻→人", "def": "to trust, to believe; letter, sign"}, {"char": "塊", "pinyin": "kuài", "reveal": "土", "def": "piece, lump, chunk; dollar; measure word"}], "hints": [{"r": "土", "m": "earth", "p": "tǔ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "木", "m": "tree", "p": "mù"}], "solution": {"認": "言", "朋": "月", "塊": "土", "休": "木", "信": "人"}}, {"tiles": [{"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "看", "pinyin": "kàn", "reveal": "手", "def": "to look, to see; to examine, to scrutini"}, {"char": "男", "pinyin": "nán", "reveal": "田", "def": "man, boy; male; baron; surname"}, {"char": "姐", "pinyin": "jiě", "reveal": "女", "def": "elder sister; miss, young lady"}, {"char": "然", "pinyin": "rán", "reveal": "灬→火", "def": "certainly; naturally; suddenly"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"姐": "女", "然": "火", "明": "月", "看": "手", "男": "田"}}, {"tiles": [{"char": "你", "pinyin": "nǐ", "reveal": "亻→人", "def": "you, second person pronoun"}, {"char": "記", "pinyin": "jì", "reveal": "言", "def": "mark, sign; to note, to record"}, {"char": "滿", "pinyin": "mǎn", "reveal": "氵→水", "def": "to fill; full, packed; satisfied"}, {"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}, {"char": "休", "pinyin": "xiū", "reveal": "木", "def": "to rest; to stop; to retire"}], "hints": [{"r": "人", "m": "person", "p": "rén"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "木", "m": "tree", "p": "mù"}], "solution": {"你": "人", "記": "言", "滿": "水", "加": "口", "休": "木"}}, {"tiles": [{"char": "快", "pinyin": "kuài", "reveal": "忄→心", "def": "speedy, rapid, quick; soon"}, {"char": "動", "pinyin": "dòng", "reveal": "力", "def": "to move, to happen; movement, action"}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "休", "pinyin": "xiū", "reveal": "亻→人", "def": "to rest; to stop; to retire"}, {"char": "眼", "pinyin": "yǎn", "reveal": "目", "def": "eyelet, hole, opening"}], "hints": [{"r": "心", "m": "heart", "p": "xīn"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "目", "m": "eye", "p": "mù"}], "solution": {"快": "心", "動": "力", "眼": "目", "明": "月", "休": "人"}}, {"tiles": [{"char": "照", "pinyin": "zhào", "reveal": "灬→火", "def": "to shine, to reflect, to illuminate"}, {"char": "息", "pinyin": "xī", "reveal": "心", "def": "to end, to cease, to put a stop to; paus"}, {"char": "看", "pinyin": "kàn", "reveal": "手", "def": "to look, to see; to examine, to scrutini"}, {"char": "峰", "pinyin": "fēng", "reveal": "山", "def": "peak, summit; a camel's hump"}, {"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"照": "火", "息": "心", "峰": "山", "看": "手", "男": "力"}}, {"tiles": [{"char": "接", "pinyin": "jiē", "reveal": "扌→手", "def": "to connect, to join; to receive, to meet"}, {"char": "春", "pinyin": "chūn", "reveal": "日", "def": "springtime; joyful, lustful, wanton"}, {"char": "信", "pinyin": "xìn", "reveal": "言", "def": "to trust, to believe; letter, sign"}, {"char": "勞", "pinyin": "láo", "reveal": "力", "def": "to labor, to toil; to do manual work"}, {"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}], "hints": [{"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"接": "手", "春": "日", "勞": "力", "信": "言", "加": "口"}}, {"tiles": [{"char": "活", "pinyin": "huó", "reveal": "氵→水", "def": "to exist, to live, to survive; living, w"}, {"char": "山", "pinyin": "shān", "reveal": "山", "def": "mountain, hill, peak"}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "明", "pinyin": "míng", "reveal": "日", "def": "bright, clear; to explain, to understand"}, {"char": "烈", "pinyin": "liè", "reveal": "灬→火", "def": "fiery, violent; ardent, vehement"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"活": "水", "山": "山", "烈": "火", "加": "力", "明": "日"}}, {"tiles": [{"char": "語", "pinyin": "yǔ", "reveal": "言", "def": "words, language; saying, expression"}, {"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}, {"char": "她", "pinyin": "tā", "reveal": "女", "def": "she, her"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "把", "pinyin": "bǎ", "reveal": "扌→手", "def": "to grasp, to hold; to guard, to take; ha"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"語": "言", "她": "女", "把": "手", "加": "口", "看": "目"}}, {"tiles": [{"char": "加", "pinyin": "jiā", "reveal": "口", "def": "to add to, to increase, to augment"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "好", "pinyin": "hǎo", "reveal": "女", "def": "good, excellent, fine; proper, suitable;"}, {"char": "畫", "pinyin": "huà", "reveal": "田", "def": "picture, painting, drawing; to draw"}, {"char": "拍", "pinyin": "pāi", "reveal": "扌→手", "def": "to clap, to tap; to hit, to beat, to sla"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"好": "女", "畫": "田", "拍": "手", "加": "口", "看": "目"}}, {"tiles": [{"char": "塊", "pinyin": "kuài", "reveal": "土", "def": "piece, lump, chunk; dollar; measure word"}, {"char": "男", "pinyin": "nán", "reveal": "田", "def": "man, boy; male; baron; surname"}, {"char": "快", "pinyin": "kuài", "reveal": "忄→心", "def": "speedy, rapid, quick; soon"}, {"char": "山", "pinyin": "shān", "reveal": "山", "def": "mountain, hill, peak"}, {"char": "看", "pinyin": "kàn", "reveal": "手", "def": "to look, to see; to examine, to scrutini"}], "hints": [{"r": "山", "m": "mountain", "p": "shān"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "土", "m": "earth", "p": "tǔ"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"塊": "土", "快": "心", "山": "山", "男": "田", "看": "手"}}, {"tiles": [{"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}, {"char": "界", "pinyin": "jiè", "reveal": "田", "def": "boundary, limit; domain; society, the wo"}, {"char": "記", "pinyin": "jì", "reveal": "言", "def": "mark, sign; to note, to record"}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "拍", "pinyin": "pāi", "reveal": "扌→手", "def": "to clap, to tap; to hit, to beat, to sla"}], "hints": [{"r": "手", "m": "hand", "p": "shǒu"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "言", "m": "speech", "p": "yán"}], "solution": {"界": "田", "記": "言", "拍": "手", "男": "力", "明": "月"}}, {"tiles": [{"char": "吃", "pinyin": "chī", "reveal": "口", "def": "to eat; to drink; to suffer, to endure, "}, {"char": "作", "pinyin": "zuò", "reveal": "亻→人", "def": "to make; to write, to compose; to act, t"}, {"char": "烈", "pinyin": "liè", "reveal": "灬→火", "def": "fiery, violent; ardent, vehement"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}, {"char": "男", "pinyin": "nán", "reveal": "力", "def": "man, boy; male; baron; surname"}], "hints": [{"r": "人", "m": "person", "p": "rén"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "口", "m": "mouth", "p": "kǒu"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"吃": "口", "作": "人", "烈": "火", "看": "目", "男": "力"}}, {"tiles": [{"char": "始", "pinyin": "shǐ", "reveal": "女", "def": "to begin, to start; beginning"}, {"char": "拉", "pinyin": "lā", "reveal": "扌→手", "def": "to pull, to drag; to seize, to hold; to "}, {"char": "思", "pinyin": "sī", "reveal": "心", "def": "to think, to ponder, to consider; final "}, {"char": "河", "pinyin": "hé", "reveal": "氵→水", "def": "river, stream; the Yellow river"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "手", "m": "hand", "p": "shǒu"}], "solution": {"始": "女", "拉": "手", "河": "水", "思": "心", "看": "目"}}, {"tiles": [{"char": "林", "pinyin": "lín", "reveal": "木", "def": "forest, grove; surname"}, {"char": "作", "pinyin": "zuò", "reveal": "亻→人", "def": "to make; to write, to compose; to act, t"}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "朋", "pinyin": "péng", "reveal": "月", "def": "friend, pal, acquaintance"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}], "hints": [{"r": "人", "m": "person", "p": "rén"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "木", "m": "tree", "p": "mù"}], "solution": {"林": "木", "作": "人", "朋": "月", "思": "田", "看": "目"}}, {"tiles": [{"char": "思", "pinyin": "sī", "reveal": "心", "def": "to think, to ponder, to consider; final "}, {"char": "信", "pinyin": "xìn", "reveal": "亻→人", "def": "to trust, to believe; letter, sign"}, {"char": "拍", "pinyin": "pāi", "reveal": "扌→手", "def": "to clap, to tap; to hit, to beat, to sla"}, {"char": "當", "pinyin": "dāng", "reveal": "田", "def": "appropriate, timely; to act, to serve; t"}, {"char": "好", "pinyin": "hǎo", "reveal": "女", "def": "good, excellent, fine; proper, suitable;"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "心", "m": "heart", "p": "xīn"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"拍": "手", "當": "田", "好": "女", "思": "心", "信": "人"}}, {"tiles": [{"char": "信", "pinyin": "xìn", "reveal": "亻→人", "def": "to trust, to believe; letter, sign"}, {"char": "畫", "pinyin": "huà", "reveal": "田", "def": "picture, painting, drawing; to draw"}, {"char": "想", "pinyin": "xiǎng", "reveal": "心", "def": "to believe, to wish for; to consider, to"}, {"char": "清", "pinyin": "qīng", "reveal": "氵→水", "def": "clean, pure; clear, distinct; peaceful"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}], "hints": [{"r": "心", "m": "heart", "p": "xīn"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "水", "m": "water", "p": "shuǐ"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"畫": "田", "想": "心", "清": "水", "信": "人", "看": "目"}}, {"tiles": [{"char": "男", "pinyin": "nán", "reveal": "田", "def": "man, boy; male; baron; surname"}, {"char": "明", "pinyin": "míng", "reveal": "月", "def": "bright, clear; to explain, to understand"}, {"char": "烈", "pinyin": "liè", "reveal": "灬→火", "def": "fiery, violent; ardent, vehement"}, {"char": "姐", "pinyin": "jiě", "reveal": "女", "def": "elder sister; miss, young lady"}, {"char": "休", "pinyin": "xiū", "reveal": "亻→人", "def": "to rest; to stop; to retire"}], "hints": [{"r": "女", "m": "woman", "p": "nǚ"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "月", "m": "moon", "p": "yuè"}, {"r": "田", "m": "field", "p": "tián"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"烈": "火", "姐": "女", "男": "田", "明": "月", "休": "人"}}, {"tiles": [{"char": "然", "pinyin": "rán", "reveal": "灬→火", "def": "certainly; naturally; suddenly"}, {"char": "識", "pinyin": "shí", "reveal": "言", "def": "knowledge; to understand, to recognize, "}, {"char": "加", "pinyin": "jiā", "reveal": "力", "def": "to add to, to increase, to augment"}, {"char": "塊", "pinyin": "kuài", "reveal": "土", "def": "piece, lump, chunk; dollar; measure word"}, {"char": "看", "pinyin": "kàn", "reveal": "目", "def": "to look, to see; to examine, to scrutini"}], "hints": [{"r": "土", "m": "earth", "p": "tǔ"}, {"r": "力", "m": "strength", "p": "lì"}, {"r": "目", "m": "eye", "p": "mù"}, {"r": "言", "m": "speech", "p": "yán"}, {"r": "火", "m": "fire", "p": "huǒ"}], "solution": {"然": "火", "識": "言", "塊": "土", "加": "力", "看": "目"}}, {"tiles": [{"char": "快", "pinyin": "kuài", "reveal": "忄→心", "def": "speedy, rapid, quick; soon"}, {"char": "像", "pinyin": "xiàng", "reveal": "亻→人", "def": "picture, image, figure; to resemble"}, {"char": "拉", "pinyin": "lā", "reveal": "扌→手", "def": "to pull, to drag; to seize, to hold; to "}, {"char": "思", "pinyin": "sī", "reveal": "田", "def": "to think, to ponder, to consider; final "}, {"char": "明", "pinyin": "míng", "reveal": "日", "def": "bright, clear; to explain, to understand"}], "hints": [{"r": "心", "m": "heart", "p": "xīn"}, {"r": "日", "m": "sun", "p": "rì"}, {"r": "人", "m": "person", "p": "rén"}, {"r": "手", "m": "hand", "p": "shǒu"}, {"r": "田", "m": "field", "p": "tián"}], "solution": {"快": "心", "像": "人", "拉": "手", "思": "田", "明": "日"}}]</script>
+<script>
+const BANK = JSON.parse(document.getElementById('bank').textContent);
+
+let puzzle=null, place={}, revealed={}, picked=null, peeks=0, t0=null, tInt=null, solved=false;
+
+const $=id=>document.getElementById(id);
+function todayStr(){
+  try{ return new Date().toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'}); }
+  catch(e){ const d=new Date(); return (d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear(); }
+}
+
+let zhVoice=null, ttsOK=false;
+try{ ttsOK = ('speechSynthesis' in window) && typeof SpeechSynthesisUtterance!=='undefined'; }catch(e){ ttsOK=false; }
+function pickVoice(){
+  if(!ttsOK) return;
+  try{
+    const vs=speechSynthesis.getVoices()||[];
+    zhVoice = vs.find(v=>v.lang==='zh-TW')
+           || vs.find(v=>/^zh(-|_)?(TW|HK|Hant)/i.test(v.lang||''))
+           || vs.find(v=>v.lang && v.lang.toLowerCase().startsWith('zh'))
+           || null;
+  }catch(e){}
+}
+try{ if(ttsOK){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; } }catch(e){}
+function speak(ch){
+  if(!ttsOK) return;
+  try{
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(ch);
+    u.lang='zh-TW';
+    if(zhVoice) u.voice=zhVoice;
+    u.rate=0.85;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+function load(store){try{return JSON.parse(localStorage.getItem(store)||'{}')}catch(e){return{}}}
+function save(store,v){try{localStorage.setItem(store,JSON.stringify(v))}catch(e){}}
+
+function dayIndex(){
+  const epoch=new Date(2024,0,1);
+  return Math.floor((Date.now()-epoch)/86400000);
+}
+function pickDaily(){
+  return BANK[dayIndex()%BANK.length];
+}
+function pickRandom(){
+  return BANK[Math.floor(Math.random()*BANK.length)];
+}
+
+function start(p){
+  puzzle=p; place={}; revealed={}; picked=null; peeks=0; t0=null; solved=false;
+  clearInterval(tInt);
+  $('hintsUsed').textContent='Peeks: 0';
+  $('timer').textContent='0:00';
+  $('status').textContent='';
+  $('winArea').innerHTML='';
+  updateStreak();
+  render();
+}
+
+function updateStreak(){
+  const s=load('progress');
+  const n=s.streak||0;
+  $('streak').textContent = n>0 ? ('Streak: '+n) : '';
+}
+
+function render(){
+  const H=$('hints'); H.innerHTML='';
+  puzzle.hints.forEach(h=>{
+    const slot=document.createElement('div'); slot.className='slot';
+    const rad=document.createElement('div'); rad.className='rad';
+    rad.innerHTML=`<span class="g cjk">${h.r}</span><span class="m">${h.p}</span>`;
+    const drop=document.createElement('div'); drop.className='drop'; drop.dataset.r=h.r;
+    const found=Object.entries(place).find(([c,r])=>r===h.r);
+    if(found){
+      const td=puzzle.tiles.find(t=>t.char===found[0]);
+      const mini=document.createElement('div');
+      mini.className='tile placed-mini';
+      mini.innerHTML=`<div class="face cjk">${td.char}</div>`;
+      mini.dataset.char=td.char;
+      if(puzzle.solution[td.char]===h.r) drop.classList.add('ok');
+      mini.onclick=e=>{e.stopPropagation(); returnTile(td.char);};
+      drop.appendChild(mini);
+    }
+    drop.onclick=()=>onDrop(h.r);
+    slot.appendChild(rad); slot.appendChild(drop);
+    H.appendChild(slot);
+  });
+
+  const T=$('tray'); T.innerHTML='';
+  puzzle.tiles.forEach(t=>{
+    if(place[t.char]!==undefined) return;
+    const tile=document.createElement('div');
+    tile.className='tile'+(picked===t.char?' picked':'');
+    tile.dataset.char=t.char;
+    let html=`<div class="face cjk">${t.char}</div><div class="pin">${t.pinyin}</div>`;
+    if(revealed[t.char]){
+      const parts=t.reveal.split('→');
+      const cells=parts.map(p=>`<div class="c cjk">${p}</div>`).join('');
+      html+=`<div class="rev">${cells}</div>`;
+    }else{
+      html+=`<div class="rev peekbar" data-peek="${t.char}"><div class="peekdot">&#9678;</div></div>`;
+    }
+    tile.innerHTML=html;
+    tile.onclick=e=>{
+      const peek=e.target.closest('[data-peek]');
+      if(peek){ doPeek(peek.dataset.peek); return; }
+      pickTile(t.char);
+    };
+    T.appendChild(tile);
+  });
+}
+
+function pickTile(c){
+  speak(c);
+  if(solved){ picked=null; return; }
+  picked = (picked===c)? null : c;
+  render();
+}
+
+function returnTile(c){
+  speak(c);
+  if(solved) return;
+  delete place[c];
+  picked=null;
+  $('winArea').innerHTML='';
+  $('status').textContent='';
+  render();
+}
+
+function onDrop(r){
+  if(solved||!picked) return;
+  startTimer();
+  const prev=Object.entries(place).find(([c,rr])=>rr===r);
+  if(prev) delete place[prev[0]];
+  for(const c in place){ if(c===picked) delete place[c]; }
+  place[picked]=r;
+  picked=null;
+  render();
+  check();
+}
+
+function doPeek(c){
+  if(revealed[c]||solved) return;
+  startTimer();
+  revealed[c]=true; peeks++;
+  $('hintsUsed').textContent='Peeks: '+peeks;
+  render();
+}
+
+function check(){
+  const all=puzzle.tiles.every(t=>place[t.char]!==undefined);
+  if(!all){ $('status').textContent=''; return; }
+  const right=puzzle.tiles.every(t=>puzzle.solution[t.char]===place[t.char]);
+  if(right){
+    solved=true; clearInterval(tInt);
+    const sec=t0?Math.round((Date.now()-t0)/1000):0;
+    const m=Math.floor(sec/60), s=sec%60;
+    const note = peeks===0?'No peeks — radical master.':(peeks+' peek'+(peeks>1?'s':'')+' used.');
+    recordWin();
+    $('status').textContent='';
+    $('winArea').innerHTML=
+      `<div class="win"><div class="big">Solved in ${m}:${String(s).padStart(2,'0')}</div>`+
+      `<div class="small">${note}</div>`+
+      `<button class="act go" onclick="nextPuzzle()">Next puzzle</button></div>`;
+  }else{
+    const wrong=puzzle.tiles.filter(t=>place[t.char]&&puzzle.solution[t.char]!==place[t.char]);
+    $('status').textContent=`${wrong.length} not in the right place yet`;
+    wrong.forEach(t=>{
+      const z=document.querySelector(`.drop[data-r="${place[t.char]}"]`);
+      if(z){z.classList.add('bad'); setTimeout(()=>z.classList.remove('bad'),360);}
+    });
+  }
+}
+
+function recordWin(){
+  const s=load('progress');
+  const today=new Date().toDateString();
+  if(s.lastWin!==today){
+    const y=new Date(Date.now()-86400000).toDateString();
+    s.streak = (s.lastWin===y)?(s.streak||0)+1:1;
+    s.lastWin=today;
+  }
+  s.total=(s.total||0)+1;
+  save('progress',s);
+  updateStreak();
+}
+
+function startTimer(){
+  if(t0) return;
+  t0=Date.now();
+  tInt=setInterval(()=>{
+    const sec=Math.round((Date.now()-t0)/1000);
+    $('timer').textContent=`${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}`;
+  },1000);
+}
+
+function nextPuzzle(){ start(pickRandom()); }
+
+function boot(){
+  try{
+    $('newBtn').onclick=nextPuzzle;
+    $('resetBtn').onclick=()=>start(puzzle);
+    $('date').textContent=todayStr();
+    start(pickDaily());
+  }catch(err){
+    var s=document.getElementById('status');
+    if(s){ s.textContent='Something went wrong loading the puzzle. Tap New puzzle.'; }
+    try{ $('newBtn').onclick=nextPuzzle; $('resetBtn').onclick=()=>start(puzzle); start(BANK[0]); }catch(e){}
+  }
+}
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded', boot);
+}else{
+  boot();
+}
+</script>
+</body>
+</html>
